@@ -1,0 +1,21 @@
+<div class="pos-f-t fixed-top header">
+    <nav class="navbar navbar-inverse bg-inverse navbar-toggleable-md">
+        <button class="navbar-toggler navbar-toggler-right" (click)="toggleSidebar()">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" [routerLink]="['/users']">Web Application</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto mt-2 mt-md-0">                
+                <li class="nav-item dropdown">
+                     <a [routerLink]="['/users']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+                        <i class="fa fa-fw fa-bar-chart-o"></i> &nbsp;
+                        <span>{{ 'Users' }}</span>
+                    </a>                
+                </li>               
+            </ul>
+        </div>
+    </nav>
+</div>
+
+
+<router-outlet></router-outlet>

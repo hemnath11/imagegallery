@@ -1,0 +1,13 @@
+
+<div class="backbutton">
+	<button type="button" class="btn btn-secondary" (click)="back()">
+		<i class="fa fa-backward" aria-hidden="true"></i> Back
+	</button>
+</div>
+
+<div *ngFor="let photos of Photoslist; let i=index">
+	<div class="photos" *ngIf="(i < 5)" >
+		<img  src="{{photos.thumbnailUrl}}"> 
+	</div>	
+</div>
+
